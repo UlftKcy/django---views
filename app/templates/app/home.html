@@ -1,0 +1,20 @@
+{% load static %} {#static file kullanmak için#}
+
+<head>
+  <link rel="stylesheet" href="{% static 'style.css' %}" alt="My image" />
+</head>
+
+<h1>Hello World</h1>
+
+<p>This is Home Page...</p>
+
+<h2>{{title}}</h2>
+
+<h2>{{dict1.django | title}}</h2>
+
+<h2>
+  {% for num in my_list %} {{num}}<br />
+  {% endfor %}
+</h2>
+
+{# This is a single line comment #}
